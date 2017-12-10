@@ -1,0 +1,129 @@
+@import "layout.scss";
+@import "normalize.scss";
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body{
+	font: 300 16px/1.2 "Roboto", sans-serif;
+	background: #003056 url("../img/bg-hd.png") repeat 50%/cover;
+	color: #574d72;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+p {
+	margin: 0;
+}
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+
+.ba-header {
+	padding: 60px 20px;
+	color: #FFF;
+	text-align: center;
+	background: url(../img/psp-hero-itunes.image.large_2x.jpg) 50%;
+	background-size: cover;
+}
+.ba-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 50px;
+}
+.ba-playlist {
+	background: #fff;
+  	border-radius: 20px;
+  	box-shadow: 1px 0 5px rgba(0, 0, 0, 0.4);
+  	padding: 30px 20px;
+  	max-width: 400px;
+  	margin: 30px auto;
+  	&__list {
+  		margin: 0;
+  		padding: 0;
+  		list-style: none;
+  	}
+}
+.ba-tune {
+  	border-top: 1px solid #e4e2e2;
+  	padding-top: 10px;
+  	margin-top: 10px;
+  	&__top {
+  		font-size: 80%;
+  		margin-bottom: 5px;
+  		color: #a4a3a9;
+  	}
+  	&__duration {
+  		display: inline-block;
+  		padding-right: 10px;
+  		margin-right: 6px;
+  		border-right: 1px solid rgba(164, 163, 169, 0.6);
+  	}
+  	&__author {
+  		text-transform: capitalize;
+  	}
+  	&__song {
+  		font-weight: 500;
+  		&::first-letter {
+  			text-transform: uppercase;
+  		}
+  	}
+  	&__like {
+  		margin-top: 10px;
+  		width: 20px;
+  		height: 20px;
+  		float: right;
+  		fill: #ed5e75;
+  		cursor: pointer;
+  		&:hover {
+  			fill: #574d72;
+  		}
+  	}
+}
+.ba-hiden {
+	display: none;
+}
+
+//media queries
+@import "media.scss";
